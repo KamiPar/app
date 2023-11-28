@@ -1,0 +1,67 @@
+.navbar {
+  justify-content: space-between;
+  width:100%
+}
+
+
+span:hover {
+  cursor: default;
+}
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  padding:10px;
+  justify-content: space-between;
+}
+
+.icon-text:hover {
+  background-color: blue;
+}
+
+.my-nav-list {
+  display: flex;
+  flex-direction: row;
+}
+.menu-button {
+  display:none
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start; /* Ustawienie na lewej stronie */
+    padding-left: 10px; /* Dodaj padding z lewej strony */
+  }
+
+  .my-nav-list {
+    flex-direction: column;
+    align-items: flex-start; /* Ustawienie na lewej stronie */
+    display: none; /* Ukryj menu na początku */
+  }
+
+  .menu-button {
+    order: -1; /* Przesuń przycisk na początek, na lewą stronę */
+    align-self: flex-start; /* Ustaw przycisk na lewej stronie */
+    margin-left: 10px; /* Dodaj margines z lewej strony */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: inherit;
+  }
+
+  .icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
