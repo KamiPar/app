@@ -35,20 +35,20 @@ a, a:visited {
 @media screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
-    align-items: flex-start; /* Ustawienie na lewej stronie */
-    padding-left: 10px; /* Dodaj padding z lewej strony */
+    align-items: flex-start;
+    padding-left: 10px;
   }
 
   .my-nav-list {
     flex-direction: column;
-    align-items: flex-start; /* Ustawienie na lewej stronie */
-    display: none; /* Ukryj menu na początku */
+    align-items: flex-start;
+    display: none;
   }
 
   .menu-button {
-    order: -1; /* Przesuń przycisk na początek, na lewą stronę */
-    align-self: flex-start; /* Ustaw przycisk na lewej stronie */
-    margin-left: 10px; /* Dodaj margines z lewej strony */
+    order: -1;
+    align-self: flex-start;
+    margin-left: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
